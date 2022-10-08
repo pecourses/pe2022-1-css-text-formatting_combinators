@@ -1,29 +1,31 @@
-/* Комбінатори
-- для потомків:  
- >  - прямий
-" " - всі
-- для (наступних) сусідніх: 
-+   - наступний
-~   - всі наступні
- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 
-body > article {
-  border: 1px solid red;
+* {
+  margin: 0;
 }
 
-/* body * {
-  border: 5px solid green;
-} */
-
-h2 + p {
-  font-style: italic;
-  font-weight: bold;
+html {
+  font-family: Montserrat, sans-serif;
+  /* font-size: 20px; */
 }
 
 article + article {
-  margin-top: 5px;
+  background-color: blue;
 }
 
-p ~ p {
-  color: darkcyan;
+footer > ul {
+  border: 2px dotted red;
+}
+
+ul ~ p {
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  text-decoration-line: underline;
+}
+
+h2 + p {
+  background-color: yellow;
+}
+main p article > p {
+  text-shadow: orange 0 -10px 1em;
 }
