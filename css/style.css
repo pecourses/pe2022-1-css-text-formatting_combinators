@@ -1,31 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
-
 * {
-  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-family: Montserrat, sans-serif;
-  /* font-size: 20px; */
+  text-align: center;
+  font-family: sans-serif;
 }
 
-article + article {
-  background-color: blue;
+.userCard {
+  border: 2px solid red;
+  max-width: 400px;
+  width: 100%;
+  min-width: 300px;
 }
 
-footer > ul {
-  border: 2px dotted red;
+.userCardBackground {
+  width: 100%;
+  height: 100px;
+  background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=300);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-ul ~ p {
-  text-decoration-style: wavy;
-  text-decoration-color: red;
-  text-decoration-line: underline;
+.userProfilePhoto {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid grey;
+  margin-top: -37px;
 }
 
-h2 + p {
-  background-color: yellow;
+.userName {
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-main p article > p {
-  text-shadow: orange 0 -10px 1em;
+
+.userInfo {
+  padding: 0 10px;
+  color: grey;
+}
+
+.userLink {
+  display: inline-block;
+  color: lightslategray;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid lightslategray;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.userFollowersList {
+  font-size: 0;
+}
+
+.userFollowers {
+  display: inline-block;
+  width: 33.33%;
+  font-size: initial;
+  padding: 10px;
+  border-top: 2px solid grey;
+  text-transform: capitalize;
+}
+
+.userFollowers + .userFollowers {
+  border-left: 2px solid grey;
 }
